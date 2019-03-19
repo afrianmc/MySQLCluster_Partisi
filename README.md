@@ -3,7 +3,7 @@
 Definisi :
 Partisi adalah memecah tabel ke dalam beberapa segment (partisi atau subpartisi), di mana tabel konvensional hanya mempunyai satu segment.
 
-## Catatan
+*NB:*
 Di dalam partisi tidak diperbolehkan menggunakan ```foreign key```, untuk mengatasi masalah tersebut adalah dengan mematikan atau comment 
 foreign key
  didalam tabel tersebut
