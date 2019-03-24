@@ -54,6 +54,7 @@ PARTITION BY LIST COLUMNS(a,b) (
     PARTITION p3 VALUES IN( (1,3), (2,2), (2,3), (3,2), (3,3) )
 );
 ```
+![Ss](https://github.com/afrianmc/MySQLCluster_Partisi/blob/master/Screenshot/CREATE%20TABLE%20RC1.PNG)
 
 ## 2. Lish Partition
 ```
@@ -67,6 +68,7 @@ PARTITION BY LIST (serverid)(
     PARTITION server_west VALUES IN(534,6422,196,956,22)
 );
 ```
+![Ss](https://github.com/afrianmc/MySQLCluster_Partisi/blob/master/Screenshot/CREATE%20TABLE%20SERVERLOGS.PNG)
 
 ## 3. Hash Partision
 ```
@@ -78,6 +80,7 @@ CREATE TABLE serverlogs2 (
 PARTITION BY HASH (serverid)
 PARTITIONS 10;
 ```
+![Ss](https://github.com/afrianmc/MySQLCluster_Partisi/blob/master/Screenshot/CREATE%20TABLE%20SERVERLOGS1.PNG)
 
 ## 4. Key Partition
 ```
@@ -90,6 +93,7 @@ CREATE TABLE serverlogs4 (
 PARTITION BY KEY()
 PARTITIONS 10;
 ```
+![Ss](https://github.com/afrianmc/MySQLCluster_Partisi/blob/master/Screenshot/CREATE%20TABLE%20SERVERLOGS4.PNG)
 
 # Testing pada Range Partition
 ### Gunakan perintah EXPLAIN untuk melihat plan eksekusi query untuk masing-masing tabel.
